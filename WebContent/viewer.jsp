@@ -15,11 +15,15 @@
     <script src="/iiv/js/jquery-1.3.2.min.js"></script>
     <script src="/iiv/js/jquery-ui-1.7.2.custom.min.js"></script>
     <script src="/iiv/js/iiv.js"></script>
+    <script src="/iiv/js/iivutil.js"></script>
     <script>
-
+    var drupal_uid = '${param.drupal_uid}';
+    var drupal_domain = '${param.drupal_domain}';
+    var solr_search_term = '${param.search}';
+    var viewer;
     document.write('<div class="iiv"></div>');
     $(document).ready(function() {
-      var viewer = new iiv.Viewer({
+        viewer = new iiv.Viewer({
         pid: '${param.pid}',
         cmodel: '${param.cmodel}', 
         dsid: 'JP2',

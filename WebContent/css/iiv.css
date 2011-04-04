@@ -27,6 +27,26 @@
 
 }
 
+.iiv-annToolbar {
+  position: absolute;
+  margin: 0;
+  height: 44px;
+  top: 44px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  z-index: 200;
+  background-color: #e0e0e0;
+
+}
+
+.iiv-annotation-pane {
+    position: absolute;
+    margin: 0;
+    height: 65px;
+    border-bottom: 1px solid #ccc;
+    z-index: 200;
+}
+
 .iiv-controlset {
   position: absolute;
   width: 150px;
@@ -39,6 +59,24 @@
   width: 32px;
   text-decoration: none !important;
   cursor: pointer;
+}
+
+/*Hat Project - Mark */
+.iiv-annToolbar button {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+/*Hat Project - Pete*/
+.iiv-toolbar input {
+    position: absolute;
+    height: 32px;
+    width: 130px;
+    text-decoration: none !important;
+    cursor: pointer;
 }
 
 .iiv-canvas {
@@ -124,6 +162,8 @@
   height: 5px;
 }
 
+
+
 .iiv-slider.ui-slider-horizontal .ui-slider-handle {
   top: -4px;
   height: 11px;
@@ -183,13 +223,69 @@ button.page-next{
   float: left;
 }
 
+/*Pete - Controlset for search*/
+.iiv-controlset.searchControlSet {
+  position: relative;
+  float: right;
+
+}
+
 button.text {
   margin-left: 176px;
 }
 
+
 button.print {
   margin-left: 209px;
 }
+
+/*HAT Project Mark */
+button.highlight {
+  margin-left: 242px;
+}
+/*Sab*/
+button.polygon{
+    margin-left: 35px;
+}
+/*Sab*/
+button.poly{
+    margin-left: 70px;
+}
+
+/*Hat Project Pete*/
+button.annotation{
+    margin-left: 640px;
+}
+
+/*HAT Project Pete*/
+input.text {
+  margin-left: 20px;
+}
+
+button.search{
+  margin-left: -15px;
+}
+
+/*Mark*/
+button.buttonHideAnnotation{
+
+}
+
+/*Mark*/
+button.buttonFlagAnnotation{
+    margin-left: 0px;
+}
+
+/*Mark*/
+#selectBox{
+  	width : 190px; /* Resize Width */
+	height: 25px;	
+}
+
+/*Jeremy*/
+
+
+
 
 /* print dialog */
 .iiv-print-dialog {
